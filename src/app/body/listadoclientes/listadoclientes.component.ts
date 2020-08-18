@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../../classes/cliente';
+import { SucursalesService } from '../../servicios/sucursales.service';
 
 @Component({
   selector: 'app-listadoclientes',
@@ -14,7 +15,7 @@ export class ListadoclientesComponent implements OnInit {
   public cliente4: Cliente;
   public cliente5: Cliente;
 
-  constructor() { }
+  constructor(public pruebaServicio: SucursalesService) { }
 
   ngOnInit(): void {
     this.cliente1 = new Cliente("Marcio", 25, true);
@@ -28,6 +29,6 @@ export class ListadoclientesComponent implements OnInit {
                           this.cliente3,
                           this.cliente4,
                           this.cliente5];
-  }
+    }
 
 }

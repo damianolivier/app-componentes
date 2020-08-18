@@ -1,7 +1,4 @@
-import { Mes } from './mes';
-
 export class Sucursal {
-    /* Modelo TypeScript */
     constructor(
         private _nombre: string,
         private _lugar: string,
