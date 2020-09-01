@@ -8,10 +8,6 @@ import { Sucursal } from '../classes/sucursal';
 
 
 export class SucursalesService {
-  private _nombre: string;
-  private _lugar: string;
-  private _ventaspormes: Array<number>
-
   public listadoSucursales: Array<Sucursal>;
   public Sucursal1: Sucursal;
   public Sucursal2: Sucursal;
@@ -20,7 +16,6 @@ export class SucursalesService {
   public Sucursal5: Sucursal;
 
   public Meses: Array<Mes>;
-
 
   constructor() {
 
@@ -38,14 +33,17 @@ export class SucursalesService {
                            new Mes("Noviembre",30),
                            new Mes("Diciembre",31));
 
-    this.Sucursal1 = new Sucursal("Casa matriz", "Santa Fe", new Array(0,10,0,0,0,0,0,0,0,0,0,0,0));
-    this.Sucursal2 = new Sucursal("Sucursal Norte", "Reconquista", new Array(0,120,0,0,0,0,0,0,0,0,0,0,0));
-    this.Sucursal3 = new Sucursal("Sucursal Sur", "Rosario", new Array(0,30,0,0,0,0,0,0,0,0,0,0,0));
-    this.Sucursal4 = new Sucursal("Sucursal Oeste", "Rafael", new Array(0,40,0,0,0,0,0,0,0,0,0,0,0));
-    this.Sucursal5 = new Sucursal("Sucursal Sur 2", "Rufino", new Array(0,50,0,0,0,0,0,0,0,0,0,0,0));
+    this.Sucursal1 = new Sucursal("Casa matriz", "Santa Fe", new Array(0,10,0,0,0,0,0,0,0,0,0,0,0),"123123123");
+    this.Sucursal2 = new Sucursal("Sucursal Norte", "Reconquista", new Array(0,120,0,0,0,0,0,0,0,0,0,0,0),"123123123");
+    this.Sucursal3 = new Sucursal("Sucursal Sur", "Rosario", new Array(0,30,0,0,0,0,0,0,0,0,0,0,0),"123123123");
+    this.Sucursal4 = new Sucursal("Sucursal Oeste", "Rafael", new Array(0,40,0,0,0,0,0,0,0,0,0,0,0),"123123123");
+    this.Sucursal5 = new Sucursal("Sucursal Sur 2", "Rufino", new Array(0,50,0,0,0,0,0,0,0,0,0,0,0),"123123123");
     this.listadoSucursales = new Array(this.Sucursal1, this.Sucursal2, this.Sucursal3, this.Sucursal4, this.Sucursal5);
 
-
    }
+
+  addSucursal(sucursal:Sucursal) {
+    this.listadoSucursales.push(sucursal);
+  }
 
 }

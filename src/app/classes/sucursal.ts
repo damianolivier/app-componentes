@@ -1,8 +1,9 @@
 export class Sucursal {
     constructor(
-        private _nombre: string,
-        private _lugar: string,
-        private _ventaspormes: Array<number>
+        public _nombre: string,
+        public _lugar: string,
+        public _ventaspormes: Array<number>,
+        public _telefono:string
     ) { }
 
     get nombre(): string { // get por defecto

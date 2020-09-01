@@ -1,0 +1,9 @@
+<h2>Ventas por mes de la Sucursal Norte</h2>
+<ul>
+    <li *ngFor="let mes of this.sucursalesServicio.Meses; let i = index" [ngClass]="{'firstrow': i==0}">
+        <p *ngIf="i > 0">
+            Mes: {{ mes.nombre }}
+            Ventas: {{ this.sucursalesServicio.listadoSucursales[1].getVentasMes(i) }}
+        </p>
+    </li>
+</ul>

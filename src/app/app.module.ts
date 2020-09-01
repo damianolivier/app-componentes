@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { NextstepsComponent } from './body/nextsteps/nextsteps.component';
 import { ListadoclientesComponent } from './body/listadoclientes/listadoclientes.component';
 import { ListadosucursalesComponent } from './body/listadosucursales/listadosucursales.component';
+import { SucursalesComponent } from './abm/sucursales/sucursales.component';
+import { VentassucursalesComponent } from './ventassucursales/ventassucursales.component';
+import { ClientesComponent } from './abm/clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { ListadosucursalesComponent } from './body/listadosucursales/listadosucu
     FooterComponent,
     NextstepsComponent,
     ListadoclientesComponent,
-    ListadosucursalesComponent
+    ListadosucursalesComponent,
+    SucursalesComponent,
+    VentassucursalesComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
