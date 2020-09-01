@@ -1,6 +1,6 @@
 <h1>Agregar nueva sucursal</h1>
 
-<form #formSucursal="ngForm" (ngSubmit)="onSubmit()">
+<form #formSucursal="ngForm" (ngSubmit)="onSubmit(); formSucursal.reset()">
     <label>Nombre:</label>
     <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="sucursalnueva._nombre" required>
     <span class="red" *ngIf="nombre.touched && !nombre.valid">

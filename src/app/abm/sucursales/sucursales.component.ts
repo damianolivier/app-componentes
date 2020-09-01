@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Sucursal } from '../../classes/sucursal';
 import { SucursalesService } from '../../servicios/sucursales.service';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-sucursales',
