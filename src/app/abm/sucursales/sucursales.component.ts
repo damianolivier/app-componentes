@@ -23,4 +23,6 @@ export class SucursalesComponent implements OnInit {
     this.sucursalnueva = new Sucursal("","",[],"");
   }
 
+  
+
 }

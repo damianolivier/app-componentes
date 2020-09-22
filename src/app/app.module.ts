@@ -14,6 +14,9 @@ import { SucursalesComponent } from './abm/sucursales/sucursales.component';
 import { VentassucursalesComponent } from './ventassucursales/ventassucursales.component';
 import { ClientesComponent } from './abm/clientes/clientes.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { PostsComponent } from './posts/posts.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +28,14 @@ import { ClientesComponent } from './abm/clientes/clientes.component';
     ListadosucursalesComponent,
     SucursalesComponent,
     VentassucursalesComponent,
-    ClientesComponent
+    ClientesComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

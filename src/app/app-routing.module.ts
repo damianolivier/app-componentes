@@ -5,9 +5,11 @@ import { ListadoclientesComponent } from './body/listadoclientes/listadoclientes
 import { ListadosucursalesComponent } from './body/listadosucursales/listadosucursales.component';
 import { SucursalesComponent } from './abm/sucursales/sucursales.component';
 import { VentassucursalesComponent } from './ventassucursales/ventassucursales.component';
+import { PostsComponent } from './posts/posts.component';
 
 const routes: Routes = [
   { path: '', component: NextstepsComponent },
+  { path: 'posts', component: PostsComponent },
   { path: 'clientes', component: ListadoclientesComponent },
   { path: 'ventassucursales', component: VentassucursalesComponent },
   { path: 'sucursales', component: ListadosucursalesComponent },
